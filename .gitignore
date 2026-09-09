@@ -1,0 +1,21 @@
+# Corrupted / stale files (zeroed-out, not usable)
+Backtesting.py
+tempCodeRunnerFile.py
+Note.html
+performance_metrics_*.csv
+backtest_results_*.html
+
+# Large local data & generated reports (regenerate rather than commit)
+dow_jones_data.csv
+data/
+results/reports/
+logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Streamlit secrets (never commit)
+.streamlit/secrets.toml
