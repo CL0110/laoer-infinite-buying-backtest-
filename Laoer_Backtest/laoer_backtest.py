@@ -72,7 +72,7 @@ with st.spinner(f"Backtesting {ticker} from {start_date} to {end_date}..."):
         st.error(f"Error downloading data: {e}")
         st.stop()
     
-    prices = data["Close"].dropna()
+    prices = data["Close"].squeeze().dropna()
     dates = prices.index
     
     # Initialize backtest state
